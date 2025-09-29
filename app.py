@@ -73,3 +73,13 @@ st.pyplot(fig)
 
 st.markdown("---")
 st.markdown("⚙️ Built with Streamlit · Data is mock institutional dataset")
+
+
+st.subheader("Retention Analysis")
+retention = filtered_df.groupby("student_id")["enrollment_year"].nunique()
+retention_rate = (retention[retention > 1].count() / retention.count()) * 100
+st.metric(label="Retention Rate", value=f"{retention_rate:.1f}%")
+st.subheader("📥 Download Filtered Data")
+csv = filtered_df.to_csv(index=False).encode("utf-8")
+st.download_button("Download CSV", csv, "filtered_data.csv", "text/csv")
+
