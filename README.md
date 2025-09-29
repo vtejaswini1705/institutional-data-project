@@ -2,57 +2,84 @@
 _Automated Data Quality & Reporting Framework for Institutional Data_
 
 ## 🔎 Project Overview  
-This project simulates the work of an ** Data Analyst** by building an end-to-end workflow for analyzing, cleaning, and reporting higher education data. The goal is to demonstrate practical skills in:  
+This project simulates the work of an **Institutional Data Analyst** by building an end-to-end workflow for analyzing, cleaning, and reporting higher education data.  
+The goal is to demonstrate practical skills in:  
 - **Data collection & management** (SQL, CSV/Excel ingestion, cleaning with Python/Pandas)  
 - **Compliance-style reporting** (IPEDS/NYSED-style enrollment, retention, and graduation rates)  
 - **Data quality automation** (validations, missing data checks, error logging)  
-- **Interactive dashboards** (Tableau/Power BI mock-ups, Python visualizations)  
+- **Interactive dashboards** (Python visualizations; extendable to Tableau/Power BI)  
 
-The project is inspired by real institutional research tasks such as **tracking enrollment trends, student retention, graduation rates, and survey outcomes**.
+The project replicates real institutional research tasks such as **tracking enrollment trends, student retention, graduation rates, and survey outcomes**.
 
 ---
 
 ## 🛠️ Tech Stack  
-- **Python (Pandas, NumPy)** → data cleaning, transformations, reporting automation  
-- **SQL (SQLite / PostgreSQL)** → relational queries for enrollment & retention  
-- **Visualization** → Matplotlib/Seaborn for plots, Tableau/Power BI dashboards (screenshots)  
-- **Excel/CSV** → mock institutional datasets  
+- **Python (Pandas, NumPy, Matplotlib, Seaborn)** → cleaning, transformations, visualizations  
+- **SQL (SQLite / PostgreSQL)** → schema creation, queries for enrollment & retention  
+- **Jupyter Notebooks** → exploratory data analysis and documentation  
+- **CSV/Excel** → mock institutional datasets  
 
 ---
 
-## 📂 Project Structure (Planned)  
-```
+## 📂 Project Structure  
+
 institutional-data-project/
-│── data/                  # mock datasets (enrollment, retention, surveys)
-│── notebooks/             # Jupyter notebooks for analysis & cleaning
-│── scripts/               # Python scripts for automation
-│── reports/               # generated reports & visualizations
-│── README.md              # project documentation
-```
+│── data/
+│ └── sample_students.csv # mock dataset
+│
+│── sql_scripts/
+│ ├── schema.sql # database schema
+│ └── enrollment_queries.sql # SQL queries for reporting
+│
+│── python_scripts/
+│ └── data_cleaning.py # cleaning + preprocessing script
+│
+│── notebooks/
+│ └── analysis.ipynb # exploratory analysis notebook
+│
+│── reports/
+│ ├── enrollment_by_year.png
+│ ├── gender_distribution.png
+│ ├── avg_age_by_major.png
+│ ├── retention_by_year.png
+│ ├── graduation_rate_by_major.png
+│ └── age_distribution.png
+│
+│── REPORT.md # final project report with insights
+│── README.md # project documentation
+
+
 
 ---
 
-## 🎯 Key Features (Planned Deliverables)  
+## 🎯 Key Features  
 1. **Data Cleaning Pipeline**  
-   - Handles missing values, outliers, invalid codes  
-   - Generates a data quality summary report  
+   - Handles missing values, invalid codes, and data type corrections  
+   - Generates a summary report of cleaned data  
 
 2. **Institutional Reporting**  
-   - Enrollment by term, retention tracking, graduation rates  
-   - Exportable reports (Excel/CSV/PDF)  
+   - Enrollment by year and major  
+   - Retention and graduation trends  
+   - Gender distribution and demographic breakdowns  
 
-3. **Dashboarding**  
-   - Tableau/Power BI dashboards for stakeholders  
-   - Python visualizations (for reproducibility)  
+3. **Dashboarding & Visualizations**  
+   - Python visualizations (see `reports/`):  
+     - `enrollment_by_year.png`  
+     - `gender_distribution.png`  
+     - `avg_age_by_major.png`  
+     - `retention_by_year.png`  
+     - `graduation_rate_by_major.png`  
+     - `age_distribution.png`  
+   - Ready to extend with Tableau/Power BI  
 
-4. **Survey Analysis**  
-   - Student feedback survey analysis (mock data)  
-   - Sentiment & trend reporting  
+4. **Survey Analysis (Next Phase)**  
+   - Framework prepared for mock student survey analysis  
+   - To simulate alumni outcomes and faculty feedback  
 
 ---
 
 ## 📌 Why This Project?  
-This project was built to align with responsibilities of an ** Data Analyst**:  
+This project was built to align with responsibilities of an **Institutional Data Analyst**:  
 ✔ Writing SQL queries to extract/analyze data  
 ✔ Automating compliance-style reports (IPEDS, NYSED)  
 ✔ Supporting cross-departmental stakeholders with clear dashboards  
@@ -60,4 +87,6 @@ This project was built to align with responsibilities of an ** Data Analyst**:
 
 ---
 
-
+## 📊 Sample Output  
+![Enrollment Trends](reports/enrollment_by_year.png)  
+*Example visualization: Total enrollment by year*
