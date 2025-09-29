@@ -1,0 +1,31 @@
+student_id,first_name,last_name,gender,age,major,enrollment_year
+1,Alice,Johnson,Female,20,Computer Science,2022
+2,Bob,Smith,Male,21,Data Science,2021
+3,Charlie,Williams,Male,19,Mathematics,2023
+4,Diana,Brown,Female,22,Economics,2020
+5,Edward,Jones,Male,20,Statistics,2022
+6,Fiona,Garcia,Female,21,Biology,2020
+7,George,Miller,Male,23,Computer Science,2021
+8,Hannah,Davis,Female,19,Data Science,2023
+9,Ian,Martinez,Male,22,Economics,2020
+10,Jane,Lopez,Female,20,Mathematics,2022
+11,Kyle,Gonzalez,Male,21,Statistics,2021
+12,Linda,Wilson,Female,22,Biology,2020
+13,Mike,Anderson,Male,20,Computer Science,2023
+14,Nora,Thomas,Female,19,Economics,2024
+15,Oscar,Taylor,Male,22,Data Science,2021
+16,Paula,Moore,Female,20,Mathematics,2022
+17,Quinn,Jackson,Male,21,Statistics,2020
+18,Rachel,White,Female,23,Biology,2021
+19,Sam,Harris,Male,22,Computer Science,2020
+20,Tina,Clark,Female,20,Data Science,2023
+21,Uma,Robinson,Female,19,Mathematics,2024
+22,Victor,Lewis,Male,21,Economics,2022
+23,Wendy,Young,Female,22,Statistics,2020
+24,Xavier,King,Male,20,Biology,2021
+25,Yara,Scott,Female,23,Computer Science,2020
+26,Zach,Green,Male,21,Data Science,2022
+27,Aria,Adams,Female,20,Mathematics,2021
+28,Ben,Campbell,Male,22,Economics,2020
+29,Clara,Mitchell,Female,21,Statistics,2023
+30,David,Perez,Male,19,Biology,2024
