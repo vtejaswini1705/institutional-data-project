@@ -13,6 +13,13 @@ The project replicates real institutional research tasks such as **tracking enro
 
 ---
 
+## 🚀 Live Demo  
+👉 [View the Interactive Dashboard on Streamlit](https://institutional-data-project-ggp4q5nrecxxfpam9vd39j.streamlit.app/)  
+
+---
+
+
+
 ## 🛠️ Tech Stack  
 - **Python (Pandas, NumPy, Matplotlib, Seaborn)** → cleaning, transformations, visualizations  
 - **SQL (SQLite / PostgreSQL)** → schema creation, queries for enrollment & retention  
